@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 12/7/2020 3:41:02 PM by Netedit Version 0.25.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netedit.exeConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\toshiba\Desktop\MySumo\Adil%20Sumo%20File\map.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\toshiba\Desktop\MySumo\Adil%20Sumo%20File\map.net.xml"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+        <junctions.corner-detail value="5"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="0.25" junctionCornerDetail="5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,50.00,1000.00,55.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":FromAdama_Mid_0" function="internal">
+        <lane id=":FromAdama_Mid_0_0" index="0" speed="23.61" length="0.10" shape="500.00,66.55 500.00,66.55"/>
+        <lane id=":FromAdama_Mid_0_1" index="1" speed="23.61" length="0.10" shape="500.00,63.25 500.00,63.25"/>
+        <lane id=":FromAdama_Mid_0_2" index="2" speed="23.61" length="0.10" shape="500.00,59.95 500.00,59.95"/>
+        <lane id=":FromAdama_Mid_0_3" index="3" speed="23.61" length="0.10" shape="500.00,56.65 500.00,56.65"/>
+    </edge>
+    <edge id=":FromAddis_Mid_0" function="internal">
+        <lane id=":FromAddis_Mid_0_0" index="0" speed="23.61" length="0.10" shape="500.00,38.45 500.00,38.45"/>
+        <lane id=":FromAddis_Mid_0_1" index="1" speed="23.61" length="0.10" shape="500.00,41.75 500.00,41.75"/>
+        <lane id=":FromAddis_Mid_0_2" index="2" speed="23.61" length="0.10" shape="500.00,45.05 500.00,45.05"/>
+        <lane id=":FromAddis_Mid_0_3" index="3" speed="23.61" length="0.10" shape="500.00,48.35 500.00,48.35"/>
+    </edge>
+
+    <edge id="FromAdama1" from="Adama_end" to="FromAdama_Mid" priority="-1">
+        <lane id="FromAdama1_0" index="0" speed="23.61" length="500.00" shape="1000.00,66.55 500.00,66.55"/>
+        <lane id="FromAdama1_1" index="1" speed="23.61" length="500.00" shape="1000.00,63.25 500.00,63.25"/>
+        <lane id="FromAdama1_2" index="2" speed="23.61" length="500.00" shape="1000.00,59.95 500.00,59.95"/>
+        <lane id="FromAdama1_3" index="3" speed="23.61" length="500.00" shape="1000.00,56.65 500.00,56.65"/>
+    </edge>
+    <edge id="FromAdama2" from="FromAdama_Mid" to="Addis_end" priority="-1">
+        <lane id="FromAdama2_0" index="0" speed="23.61" length="500.00" shape="500.00,66.55 0.00,66.55"/>
+        <lane id="FromAdama2_1" index="1" speed="23.61" length="500.00" shape="500.00,63.25 0.00,63.25"/>
+        <lane id="FromAdama2_2" index="2" speed="23.61" length="500.00" shape="500.00,59.95 0.00,59.95"/>
+        <lane id="FromAdama2_3" index="3" speed="23.61" length="500.00" shape="500.00,56.65 0.00,56.65"/>
+    </edge>
+    <edge id="FromAddis1" from="Addis_Start" to="FromAddis_Mid" priority="-1">
+        <lane id="FromAddis1_0" index="0" speed="23.61" length="500.00" shape="0.00,38.45 500.00,38.45"/>
+        <lane id="FromAddis1_1" index="1" speed="23.61" length="500.00" shape="0.00,41.75 500.00,41.75"/>
+        <lane id="FromAddis1_2" index="2" speed="23.61" length="500.00" shape="0.00,45.05 500.00,45.05"/>
+        <lane id="FromAddis1_3" index="3" speed="23.61" length="500.00" shape="0.00,48.35 500.00,48.35"/>
+    </edge>
+    <edge id="FromAddis2" from="FromAddis_Mid" to="Adama_start" priority="-1">
+        <lane id="FromAddis2_0" index="0" speed="23.61" length="500.00" shape="500.00,38.45 1000.00,38.45"/>
+        <lane id="FromAddis2_1" index="1" speed="23.61" length="500.00" shape="500.00,41.75 1000.00,41.75"/>
+        <lane id="FromAddis2_2" index="2" speed="23.61" length="500.00" shape="500.00,45.05 1000.00,45.05"/>
+        <lane id="FromAddis2_3" index="3" speed="23.61" length="500.00" shape="500.00,48.35 1000.00,48.35"/>
+    </edge>
+
+    <junction id="Adama_end" type="unregulated" x="1000.00" y="55.00" incLanes="" intLanes="" shape="1000.00,55.05 1000.00,68.15"/>
+    <junction id="Adama_start" type="unregulated" x="1000.00" y="50.00" incLanes="FromAddis2_0 FromAddis2_1 FromAddis2_2 FromAddis2_3" intLanes="" shape="1000.00,36.85 1000.00,49.95"/>
+    <junction id="Addis_Start" type="unregulated" x="0.00" y="50.00" incLanes="" intLanes="" shape="0.00,49.95 0.00,36.85"/>
+    <junction id="Addis_end" type="unregulated" x="0.00" y="55.00" incLanes="FromAdama2_0 FromAdama2_1 FromAdama2_2 FromAdama2_3" intLanes="" shape="0.00,68.15 0.00,55.05"/>
+    <junction id="FromAdama_Mid" type="priority" x="500.00" y="55.00" incLanes="FromAdama1_0 FromAdama1_1 FromAdama1_2 FromAdama1_3" intLanes=":FromAdama_Mid_0_0 :FromAdama_Mid_0_1 :FromAdama_Mid_0_2 :FromAdama_Mid_0_3" shape="500.00,68.15 500.00,55.05 500.00,68.15">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="FromAddis_Mid" type="priority" x="500.00" y="50.00" incLanes="FromAddis1_0 FromAddis1_1 FromAddis1_2 FromAddis1_3" intLanes=":FromAddis_Mid_0_0 :FromAddis_Mid_0_1 :FromAddis_Mid_0_2 :FromAddis_Mid_0_3" shape="500.00,49.95 500.00,36.85 500.00,49.95">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+
+    <connection from="FromAdama1" to="FromAdama2" fromLane="0" toLane="0" via=":FromAdama_Mid_0_0" dir="s" state="M"/>
+    <connection from="FromAdama1" to="FromAdama2" fromLane="1" toLane="1" via=":FromAdama_Mid_0_1" dir="s" state="M"/>
+    <connection from="FromAdama1" to="FromAdama2" fromLane="2" toLane="2" via=":FromAdama_Mid_0_2" dir="s" state="M"/>
+    <connection from="FromAdama1" to="FromAdama2" fromLane="3" toLane="3" via=":FromAdama_Mid_0_3" dir="s" state="M"/>
+    <connection from="FromAddis1" to="FromAddis2" fromLane="0" toLane="0" via=":FromAddis_Mid_0_0" dir="s" state="M"/>
+    <connection from="FromAddis1" to="FromAddis2" fromLane="1" toLane="1" via=":FromAddis_Mid_0_1" dir="s" state="M"/>
+    <connection from="FromAddis1" to="FromAddis2" fromLane="2" toLane="2" via=":FromAddis_Mid_0_2" dir="s" state="M"/>
+    <connection from="FromAddis1" to="FromAddis2" fromLane="3" toLane="3" via=":FromAddis_Mid_0_3" dir="s" state="M"/>
+
+    <connection from=":FromAdama_Mid_0" to="FromAdama2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":FromAdama_Mid_0" to="FromAdama2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":FromAdama_Mid_0" to="FromAdama2" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":FromAdama_Mid_0" to="FromAdama2" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from=":FromAddis_Mid_0" to="FromAddis2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":FromAddis_Mid_0" to="FromAddis2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":FromAddis_Mid_0" to="FromAddis2" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":FromAddis_Mid_0" to="FromAddis2" fromLane="3" toLane="3" dir="s" state="M"/>
+
+</net>

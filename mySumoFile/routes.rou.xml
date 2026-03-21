@@ -1,0 +1,18 @@
+<routes>
+   <vType id="car1" type="passenger" length="5" maxSpeed="22" accel="3.5" decel="2.2"  sigma="1.0" color="255,255,255"/>
+   <vType id="car2" type="passenger" length="5" maxSpeed="22" accel="3.5" decel="2.2" sigma="1.0" color="128,0,255"/>
+   
+   <flow id="FromAddisFlow1" type="car1" departLane="0" departSpeed="20" from="FromAddis1" to="FromAddis2" number="50" probability="0.55"/>
+   <flow id="FromAddisFlow2" type="car1" departLane="1" departSpeed="max" from="FromAddis1" to="FromAddis2" number="50" probability="0.3"/>
+   <flow id="FromAddisFlow3" type="car1" departLane="2" departSpeed="21" from="FromAddis1" to="FromAddis2" number="50" probability="0.35"/>
+   <flow id="FromAddisFlow4" type="car1" departLane="3" departSpeed="max" from="FromAddis1" to="FromAddis2" number="50" probability="0.45"/>
+   
+   <flow id="FromAdamaFlow1" type="car2" departLane="0" departSpeed="max" from="FromAdama1" to="FromAdama2" number="50" probability="0.55"/>
+   <flow id="FromAdamaFlow2" type="car2" departLane="1" departSpeed="20" from="FromAdama1" to="FromAdama2" number="50" probability="0.3"/>
+   <flow id="FromAdamaFlow3" type="car2" departLane="2"  departSpeed="max" from="FromAdama1" to="FromAdama2" number="50" probability="0.35"/>
+   <flow id="FromAdamaFlow4" type="car2" departLane="3" departSpeed="20" from="FromAdama1" to="FromAdama2" number="50" probability="0.45"/>
+
+</routes>
+
+<!-- accel="3.5" decel="2.2"
+accel="3.5" decel="2.2"-->
